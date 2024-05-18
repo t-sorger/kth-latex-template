@@ -1,8 +1,7 @@
 \section{Section}
 % \addcontentsline{toc}{section}{Section} % For the contents page
 
-\cite{incollection}
-\cite{url}
+\cite{google}
 
 \href{https://www.doi2bib.org/}{https://www.doi2bib.org/}
 
@@ -19,5 +18,20 @@
 See figure \ref{fig:kth}.
 See paragraph \nameref{para:paragraph}.
 
+
+\begin{lstlisting}[language=Python, caption=Python example]
+import numpy as np
+    
+def incmatrix(genl1,genl2):
+    m = len(genl1)
+    n = len(genl2)
+    M = None #to become the incidence matrix
+    VT = np.zeros((n*m,1), int)  #dummy variable
+    
+    return VT
+\end{lstlisting}
+
+The next code will be directly imported from a file:
+\lstinputlisting[language=Python,caption=demo.py]{sections/code/demo.py}
 
 \lipsum[1-7]
